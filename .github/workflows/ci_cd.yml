@@ -49,7 +49,7 @@ jobs:
       - name: Deploy locally
         shell: pwsh
         run: |
-          $destination = 'C:\Users\Sowmyasree\Documents\deployment'
+          $destination = 'C:\Users\kanishka\Documents\deployment'
           
           # Ensure the destination directory exists
           if (!(Test-Path -Path $destination)) {
@@ -65,13 +65,13 @@ jobs:
       - name: Verify deployment contents
         shell: pwsh
         run: |
-          $destination = 'C:\Users\Sowmyasree\Documents\deployment'
+          $destination = 'C:\Users\kanishka\Documents\deployment'
           Get-ChildItem -Path $destination -Recurse
 
       - name: Deploy locally
         shell: pwsh
         run: |
-          $destination = 'C:\Users\Sowmyasree\Documents\deployment'
+          $destination = 'C:\Users\kanishka\Documents\deployment'
     
           # Ensure the destination directory exists
           if (!(Test-Path -Path $destination)) {
